@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- AWP_In_Variable Name='Rentabilidade_Qualidade' -->
+<!-- AWP_In_Variable Name='OEE' -->
+<!-- AWP_In_Variable Name='Disp_Total' -->
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="10">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="_css/producaokpi.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-maskmoney/3.0.2/jquery.maskMoney.min.js"></script>
+    <title>Document</title>
+    <script src="_js/val.js"></script>
+
+    <style>
+        .a {
+            border-style: inset;
+            width: 100px;
+        }
+    </style>
+
+    <script>
+        $(function () {
+            $('#Preco').maskMoney({
+                decimal: '.',
+                thousands: '',
+                precision: 2
+            });
+        })
+
+        $(function () {
+            $('#Preco1').maskMoney({
+                decimal: '.',
+                thousands: '',
+                precision: 2
+            });
+        })
+
+        $(function () {
+            $('#Preco2').maskMoney({
+                decimal: '.',
+                thousands: '',
+                precision: 2
+            });
+        })
+    </script>
+</head>
+
+<body onload="inicio1()">
+
+    <header>
+        <img src="_img/logoSenai.png" id="logo">
+        <img src="_img/sair.png" onclick="logout()" alt="" id="sair">
+    </header>
+
+    <main>
+        <div>
+
+            <h1>Produção e Qualidade</h1>
+            <div class="tela" id="tela">
+                <h4>Deseja Sair?</h4>
+                <div id="yn">
+
+                    <div><button id="sim" class="btn-out" onclick="sair()"> SIM</button>
+                    <button id="nao" class="btn-out" onclick="normal()">NAO</button></div>
+
+                </div>
+            </div>
+
+            <div id="info">
+                <div id="RQ">
+                    <p>Rend.Quali.</p>
+
+                    <input id="Preco" size="4" maxlength="4" value=':="Rentabilidade_Qualidade":'>
+
+                </div>
+
+                <div id="Prod">
+                    <p>OEE</p>
+
+                    <input id="Preco1" size="4" maxlength="4" value=':="OEE":'>
+
+                </div>
+
+                <div id="Disp">
+                    <p>Disponibilidade</p>
+
+                    <input id="Preco2" size="4" maxlength="4" value=':="Disp_Total":'>
+
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

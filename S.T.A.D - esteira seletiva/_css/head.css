@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+:root {
+    --c1: #005091;
+    --c2: #aeb0a028;
+    --c3: #1C1C1C;
+    --c4: #D9D7DD;
+    --bl: black;
+    --wh: white;
+}
+
+header {
+    display: block;
+}
+
+div#headerTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--c1);
+    padding: 5px 5%;
+
+}
+
+#logo {
+    width: 150px;
+    max-width: 150px;
+}
+
+#login {
+    transition: 0.4s;
+    width: 40px;
+}
+
+
+#login:hover {
+    transition: 0.4s;
+    transform: scale(1.05);
+}
+
+div#headerBottom {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px 5%;
+    background-color: #aeb0a028;
+    box-shadow: 2px 2px 5px #aeb0a028;
+    margin: 0rem 0rem 2rem 0rem;
+}
+
+#nav {
+    display: block;
+}
+
+#btn-mobile {
+    display: none;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+#menu a {
+    position: relative;
+    display: block;
+    padding: 0.8rem;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    color: var(--bl);
+    margin-right: 8px;
+}
+
+#menu a:hover {
+    color: var(--c1);
+}
+
+#menu a:after {
+    transition: 0.3s;
+    content: "";
+    position: absolute;
+    background-color: var(--c1);
+    border-radius: 30px;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+}
+
+#menu a:hover::after {
+    transition: 0.3s;
+    width: 100%;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    width: 900px;
+    height: 300px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+div#fc {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.425);
+}
+
+div#cont {
+    width: 100%;
+    height: 235px;
+    display: flex;
+}
+
+div.titleCont {
+    width: 100%;
+    height: 50px;
+    padding: 15px 20px;
+}
+
+div#contatos {
+    width: 33.3%;
+    height: 100%;
+}
+
+div#endereco {
+    width: 33.3%;
+    height: 100%;
+}
+
+div#rede {
+    width: 33.3%;
+    height: 100%;
+}
+
+div.dis {
+    transition: 0.4s;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+div#rede img {
+    width: 45px;
+    margin-right: 10px;
+
+}
+
+div#rede .dis:hover {
+    transition: 0.4s;
+    transform: scale(1.05);
+    background-color: var(--c4);
+}
+
+
+
+
+
+@media (max-width: 600px) {
+    div#headerBottom {
+        padding: 10px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #btn-mobile {
+        display: block;
+    }
+
+    nav.active #menu {
+        z-index: 1000;
+        display: block;
+        position: absolute;
+        width: 220px;
+        height: 220px;
+        top: 105px;
+        left: 0px;
+        border-radius: 0px 0px 90% 0px;
+        background-color: white;
+    }
+
+    #menu a:hover::after {
+        transition: 0.3s;
+        width: 50%;
+    }
+
+    #hamburger {
+        border-top: 2px solid;
+        width: 20px;
+    }
+
+    #hamburger::after,
+    #hamburger::before {
+        content: '';
+        display: block;
+        width: 25px;
+        height: 2px;
+        border-radius: 20px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: 0.3s;
+        position: relative;
+    }
+
+    nav.active #hamburger {
+        border-top-color: transparent;
+    }
+
+    nav.active #hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+}

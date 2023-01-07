@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+:root {
+    --f1:'Lato', sans-serif;
+    --c1: #005091;
+    --c2: #ffffff;
+    --c3: #000000;
+    --c4: #333333;
+    --c5: #ff0000;
+    --c6: #dfdfdf;
+    --c7: #b9b9b9;
+    --c8: #04AA6D;
+  }
+
+
+body {
+    font-family: var(--fonte1);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 5%;
+    background-color: var(--c1);
+}
+
+#logo {
+    width: 150px;
+}
+
+#sair {
+    width: 50px;
+}
+
+#sair:hover {
+    background-color: #aa1313;
+}
+
+
+
+
+
+main {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    letter-spacing: 3px;
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/*---------------------------TELA DE SAIDA---------------------------*/
+
+h4 {
+    letter-spacing: 3px;
+    font-weight: 400px;
+    font-size: 30px;
+    text-align: center;
+    color: var(--c2);
+    margin-top: 40px;
+}
+  
+  
+  #tela{
+    position: absolute;
+    display: flex;
+    right: 714px;
+    bottom: 400px;
+    height: 300px;
+    width: 500px;
+    background-color: var(--c4);
+    border: 2px solid var(--c2);
+    display: none;
+  }
+  
+  #yn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;    
+  }
+  
+  #tela p{
+    font-family: var(--f1);
+    color: var(--c2);
+    font-size: 35px;
+    margin-top: 40px;
+    justify-content: center;
+  }
+  
+  .sair{
+    height: 50px;
+    
+  }
+  
+  .sair:hover{
+    background-color: #aa1313;
+    
+  }
+  
+  .btn-out{
+    background-color: #aa1313;
+    justify-content: center;
+    margin: 10px;
+    align-items: center;
+    padding: 16px;
+    margin-top: 50px;
+    color: white;
+    font-weight: bold;
+    width: 120px;
+    margin: 20px;
+    border: none;
+  }
+  
+  .btn-out:hover{
+    background-color: rgb(238, 231, 231);
+    color: #aa1313;
+  }
+
+
+
+
+
+#info {
+    height: 500px;
+    width: 1100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    background-color: var(--c1);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+p {
+    font-weight: bolder;
+}
+
+
+/*------------------------------------------------------*/
+
+
+
+.fundo {
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+}
+
+.fundo:hover {
+    background-color: var(--c4);
+}
+
+
+
+
+/*------------------------------------------------------*/
+
+#RQ {
+    display: flex;
+    height: 7rem;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--c4);
+}
+
+#RQ p {
+    font-style: var(--fonte1);
+    padding: 5px;
+    font-size: 20px;
+    color: var(--c2);
+    margin-top: 20px;
+}
+
+#RQ input {
+    height: 80px;
+    width: 200px;
+    font-size: 23px;
+    border-radius: 10px;
+    border-color: var(--c3);
+    justify-content: center;
+}
+
+/*------------------------------------------------------*/
+
+#Prod {
+    display: flex;
+    height: 7rem;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--c4);
+}
+
+#Prod p {
+    font-style: var(--fonte1);
+    padding: 5px;
+    font-size: 20px;
+    color: var(--c2);
+    margin-top: 20px;
+}
+
+#Prod input {
+    height: 80px;
+    width: 200px;
+    font-size: 23px;
+    border-radius: 10px;
+    border-color: var(--c3);
+}
+
+/*------------------------------------------------------*/
+
+#Disp {
+    display: flex;
+    height: 7rem;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--c4);
+}
+
+#Disp p {
+    font-style: var(--fonte1);
+    padding: 5px;
+    font-size: 20px;
+    color: var(--c2);
+    margin-top: 20px;
+}
+
+#Disp input {
+    height: 80px;
+    width: 200px;
+    font-size: 23px;
+    border-radius: 10px;
+    border-color: var(--c3);
+}
+
+
+
+
+@media (max-width: 999px) {
+    #info {
+        height: 500px;
+        width: 500px;
+        display: block;
+        padding: 2rem;
+        border-radius: 10px;
+        background-color: var(--c1);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #RQ {
+        display: flex;
+        justify-content: center;
+        height: 7rem;
+        width: 15rem;
+        margin-top: 20px;
+        border-radius: 10px;
+        background-color: var(--c4);
+    }
+
+    #Prod {
+        display: flex;
+        justify-content: center;
+        height: 7rem;
+        width: 15rem;
+        margin-top: 20px;
+        border-radius: 10px;
+        background-color: var(--c4);
+    }
+
+    #Disp {
+        display: flex;
+        justify-content: center;
+        height: 7rem;
+        width: 15rem;
+        margin-top: 20px;
+        border-radius: 10px;
+        background-color: var(--c4);
+    }
+}

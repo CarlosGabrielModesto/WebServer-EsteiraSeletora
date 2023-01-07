@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #efedf3;
+}
+
+/*INÍCIO PAINEL*/
+
+.conteudo-principal .paineis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 625px;
+  /*Aqui muda o tamanho do painel e a disposição*/
+  width: 75vw;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  box-shadow: 2px 8px 8px 1px rgba(0, 0, 0, 0.2);
+
+}
+
+.conteudo-principal .paineis .imagem-painel {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+
+  filter: brightness(98%);
+  /*Aqui coloca uma pelicula por cima do painel, se quiser*/
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.conteudo-principal .paineis .projeto1 {
+  background-image: url("1.png");
+}
+
+.conteudo-principal .paineis .projeto2 {
+  background-image: url("2.png");
+}
+
+.conteudo-principal .paineis .projeto3 {
+  background-image: url("3.png");
+}
+
+.conteudo-principal .paineis .projeto4 {
+  background-image: url("4.png");
+}
+
+.conteudo-principal .paineis .projeto5 {
+  background-image: url("5.png");
+}
+
+.conteudo-principal .paineis .projeto6 {
+  background-image: url("6.png");
+}
+
+.conteudo-principal .paineis .projeto7 {
+  background-image: url("7.png");
+}
+
+.conteudo-principal .paineis .imagem-painel.mostrar {
+  opacity: 1;
+}
+
+.conteudo-principal .paineis .seta {
+  background-image: url('seta.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  text-indent: 100%;
+  overflow: hidden;
+  filter: brightness(85%);
+}
+
+.conteudo-principal .paineis .seta.btn-voltar {
+  left: 20px;
+  transform: rotateY(180deg);
+}
+
+.conteudo-principal .paineis .seta.btn-avancar {
+  right: 20px;
+}
+
+/*FIM PAINEL*/
+
+
+/*Estilizando Botão*/
+
+#btn-slide {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.btn-catalogo {
+  text-decoration: none;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  background-color: #005091;
+  margin-top: 40px;
+  padding: 20px;
+  width: 175px;
+  font-size: 16px;
+  color: white;
+}
+
+/*-------------------Redimencionamento - Carrossel ----------------==*/
+
+
+@media (max-width: 1670px) {
+
+  /*INÍCIO REDIMENCIONAMNETO PAINEL*/
+
+
+
+  .conteudo-principal .paineis {
+    height: 620px;
+    /*Aqui muda o tamanho do painel e a disposição*/
+    width: 85vw;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+
+    box-shadow: 2px 8px 8px 1px rgba(0, 0, 0, 0.2);
+
+  }
+
+  .conteudo-principal .paineis .seta.btn-voltar {
+    left: 20px;
+  }
+
+  /*Estilizando Botão*/
+
+  #btn-slide {
+    display: flex;
+    position: relative;
+    justify-content: center;
+  }
+
+  .btn-catalogo {
+    text-decoration: none;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    background-color: #005091;
+    margin-top: 40px;
+    padding: 20px;
+    width: 175px;
+    font-size: 16px;
+    color: white;
+  }
+}
+
+@media (max-width: 1480px) {
+  .conteudo-principal .paineis {
+    height: 520px;
+    /*Aqui muda o tamanho do painel e a disposição*/
+    width: 65vw;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    box-shadow: 2px 8px 8px 1px rgba(0, 0, 0, 0.2);
+
+  }
+
+
+}

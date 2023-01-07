@@ -1,0 +1,151 @@
+footer {
+    background-color: var(--c1);
+    padding: 0rem 5%;
+    margin-top: 1.8rem;
+}
+
+div#line1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+div#logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 20px;
+}
+
+div#logo img {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+
+
+
+div#home {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    padding-bottom: 15px;
+}
+
+div#home h3 {
+    color: var(--wh);
+    margin-bottom: 5px;
+}
+
+div#home ul {
+    list-style: disc;
+    color: var(--wh);
+}
+
+div#home li {
+    margin-left: 25px;
+    padding: 3px;
+}
+
+div#home a {
+    color: var(--wh);
+    text-decoration: none;
+}
+
+div#home a:hover {
+    color: var(--c3);
+}
+
+
+
+div#contato {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    padding-bottom: 15px;
+}
+
+div#contato h3 {
+    color: var(--wh);
+    margin-bottom: 5px;
+}
+
+div#contato ul {
+    list-style: disc;
+}
+
+div#contato li {
+    color: var(--wh);
+    margin-left: 25px;
+    padding: 3px;
+}
+
+
+
+div#redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+    padding-bottom: 15px;
+}
+
+div#redes h3 {
+    color: var(--wh);
+}
+
+div#redesImg {
+    padding-left: 25px;
+}
+
+div#redesImg img {
+
+    transition: 0.4s;
+    width: 50px;
+    margin-top: 10px;
+    border-radius: 8px;
+
+}
+
+div#redesImg img:hover {
+    transition: 0.4s;
+    transform: scale(1.05);
+    background-color: var(--c3);
+}
+
+
+div#line2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid var(--wh);
+}
+
+div#line2 p {
+    margin: 15px 0px;
+    color: var(--wh);
+}
+
+/*------------redimencionando footer -------------------------------*/
+
+footer{
+    min-width: 768px;
+}
+
+@media (max-width: 1040px) {
+    div#line2 p{
+        text-align: center;
+    }
+}
+
+@media (max-width: 968px) {
+
+    div#redesImg img {
+        display: block;
+    }
+
+    div#redes h3{
+        text-align: center;
+    }
+}

@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --color1: #005091;
+    --color2: #ededed;
+    --hover: #333;
+    --fonte1: 'Lato', sans-serif;
+}
+
+body {
+    background-color: var(--color2);
+    font-family: var(--fonte1);
+}
+
+
+/*_____________________________CONTEÚDO PRINCIPAL_______________________________________________________________________*/
+
+.container {
+    display: flex;
+    padding: 4rem 6rem 4rem 6rem;
+}
+
+.catalago {
+    width: 250px;
+    height: 365px;
+    background-color: #005091;
+    border-radius: 20px;
+    margin-right: 5rem;
+}
+
+.catalago hr{
+    width: 6,5cm;
+    margin: 10px;
+}
+
+.filtro{
+    text-align: center;
+    margin: 10px;
+}
+
+.filtro h2{
+    color: white;
+}
+
+.filtro a{
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+
+.filtro li{
+    color: white;
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.filtro li:hover{
+    color: white;
+    list-style: none;
+    margin-bottom: 10px;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+
+.cor{
+    text-align: center;
+}
+
+.box{
+    display: flex;
+    background-color: #bebebe;
+    width: 1200px;
+    border-radius: 10px;
+    padding: 3rem;
+    margin-bottom: 3rem;
+}
+
+figure {
+    transition: 0.4s;
+    width: 500px;
+    text-align: center;
+    padding-right: 6rem;
+}
+
+figure img{
+    width: 200px;
+    border-radius: 20px;
+}

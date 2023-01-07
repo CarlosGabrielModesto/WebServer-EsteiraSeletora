@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!-- AWP_In_Variable Name='Aux_Write_Bx_Am_UNIBR' -->
+<!-- AWP_In_Variable Name='Aux_Write_Md_Am_UNIBR' -->
+<!-- AWP_In_Variable Name='Aux_Write_Al_Vm_UNIBR' -->
+
+<!-- AWP_In_Variable Name='Aux_Write_Bx_Vm_Dexco' -->
+<!-- AWP_In_Variable Name='Aux_Write_Md_Az_Dexco' -->
+<!-- AWP_In_Variable Name='Aux_Write_Md_Am_Dexco' -->
+<!-- AWP_In_Variable Name='Aux_Write_Bx_Az_Dexco' -->
+<!-- AWP_In_Variable Name='Aux_Write_Al_Vm_Dexco' -->
+
+<!-- AWP_In_Variable Name='Aux_Write_Al_Am_Caio' -->
+<!-- AWP_In_Variable Name='Aux_Write_Bx_Am_Caio' -->
+<!-- AWP_In_Variable Name='Aux_Write_Bx_Az_Caio' -->
+<!-- AWP_In_Variable Name='Aux_Write_Bx_Vm_Caio' -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendas</title>
+    <link rel="stylesheet" href="_css/head.css">
+    <link rel="stylesheet" href="_css/venda.css">
+    <link rel="stylesheet" href="_css/footer.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="_js/val.js"></script>
+    <script src="_js/index.js"></script>
+
+</head>
+
+<body onload="inicio(), inicio1()">
+    <header>
+        <div id="headerTop">
+            <img src="_img/logoSenai.png" alt="logo" id="logo">
+            <a href="#"><img src="_img/sair.png" alt="sair" class="sair" onclick="logout()"></a>
+        </div>
+    </header>
+
+    <div class="tela" id="tela">
+        <div id="yn">
+            <p> Deseja sair?</p>
+            <div>
+                <button class="sair btn-out" id="sim" onclick="sair()"> SIM</button>
+                <button class="sair btn-out" id="nao" onclick="normal()">NÃO</button>
+            </div>
+        </div>
+    </div>
+
+    <section id="temaVenda" class="container">
+        <div id="can" class="cantinho">
+            <div class="cabe">
+                <h1>Selecione uma empresa:</h1>
+            </div>
+            <br>
+            <div class="center" id="language" onChange="update()">
+                <button onclick="uni()" id="1" class="emp">Onibr</button>
+                <button onclick="emb()" id="2" class="emp">Texco</button>
+                <button onclick="cai()" id="3" class="emp">Cayo</button>
+            </div>
+        </div>
+
+        <div class="table-box">
+            <div class="aa" id="aa">
+                <h1>ONIBR</h1>
+                <br>
+                <form method="post" action="" onsubmit="return check()" ; '''>
+                    <div class="socorro">
+                        <div class="box">
+                            <figure class="figura">
+                                <img src="_img/_catalago/ama-p.svg">
+                            </figure>
+                            <div class="textoPro">
+                                <h3>Peça Baixa Amarela</h3>
+                                <br>
+                                <br>
+                                <input type="text" name="Aux_Write_Bx_Am_UNIBR" placeholder="Qtde." size="3">
+                            </div>
+                        </div>
+                        <div class="box">
+                            <figure class="figura">
+                                <img src="_img/_catalago/ama-m.svg">
+                            </figure>
+                            <div class="textoPro">
+                                <h3>Peça Média Amarela</h3>
+                                <br>
+                                <br>
+                                <input type="text" name="Aux_Write_Md_Am_UNIBR" placeholder="Qtde." size="3">
+                            </div>
+                        </div>
+                        <div class="box">
+                            <figure class="figura">
+                                <img src="_img/_catalago/verm-g.svg">
+                            </figure>
+                            <div class="textoPro">
+                                <h3>Peça Alta Vermelha</h3>
+                                <br>
+                                <br>
+                                <input type="text" name="Aux_Write_Al_Vm_UNIBR" placeholder="Qtde." size="3">
+                            </div>
+                        </div>
+                    </div>
+                    <input type="submit">
+                </form>
+            </div> 
+
+            <div class="bb" id="bb">
+                <h1>TEXCO</h1>
+                <br>
+                <form method="post" action="" onsubmit="return check()" ; '''>
+                    <div class="socorro">
+                        <div class="box">
+                            <figure class="figura">
+                                <img src="_img/_catalago/verm-p.svg">
+                            </figure>
+                            <div class="textoPro">
+                                <h3>Peça Baixa Vermelha</h3>
+                                <br>
+                                <br>
+                                <input type="text" name="Aux_Write_Bx_Vm_Dexco" placeholder="Qtde." size="3">
+                            </div>
+                        </div>
+                        <div class="box">
+                            <figure class="figura">
+                                <img src="_img/_catalago/azul-m.svg">
+                            </figure>
+                            <div class="textoPro">
+                                <h3>Peça Média Azul</h3>
+                                <br>
+                                <br>
+                                <input type="text" name="Aux_Write_Md_Az_Dexco" placeholder="Qtde." size="3">
+                            </div>
+                        </div>
+                        <div class="box">
+                            <figure class="figura">
+                                <img src="_img/_catalago/ama-m.svg">
+                            </figure>
+                            <div class="textoPro">
+                                <h3>Peça Média Amarela</h3>
+                                <br>
+                                <br>
+                                <input type="text" name="Aux_Write_Md_Am_Dexco" placeholder="Qtde." size="3">
+                            </div>
+                        </div>
+                        <div class="box">
+                            <figure class="figura">
+                                <img src="_img/_catalago/azul-p.svg">
+                            </figure>
+                            <div class="textoPro">
+                                <h3>Peça Baixa Azul</h3>
+                                <br>
+                                <br>
+                                <input type="text" name="Aux_Write_Bx_Az_Dexco" placeholder="Qtde." size="3">
+                            </div>
+                        </div>
+                        <div class="box">
+                            <figure class="figura">
+                                <img src="_img/_catalago/verm-g.svg">
+                            </figure>
+                            <div class="textoPro">
+                                <h3>Peça Alta Vermelha</h3>
+                                <br>
+                                <br>
+                                <input type="text" name="Aux_Write_Al_Vm_Dexco" placeholder="Qtde." size="3">
+                            </div>
+                        </div>
+                    </div>
+                    <input type="submit">
+                </form>
+            </div>
+
+            <div class="cc" id="cc">
+
+                <h1>CAYO</h1>
+                <form method="post" action="" onsubmit="return check()" ; '''>
+                    <div class="socorro">
+                        <div class="box">
+                            <figure class="figura">
+                                <img src="_img/_catalago/ama-g.svg">
+                            </figure>
+                            <div class="textoPro">
+                                <h3>Peça Alta Amarela</h3>
+                                <br>
+                                <br>
+                                <input type="text" name="Aux_Write_Al_Am_Caio" placeholder="Qtde." size="3">
+                            </div>
+                        </div>
+                        <div class="box">
+                            <figure class="figura">
+                                <img src="_img/_catalago/ama-p.svg">
+                            </figure>
+                            <div class="textoPro">
+                                <h3>Peça Baixa Amarela</h3>
+                                <br>
+                                <br>
+                                <input type="text" name="Aux_Write_Bx_Am_Caio" placeholder="Qtde." size="3">
+                            </div>
+                        </div>
+                        <div class="box">
+                            <figure class="figura">
+                                <img src="_img/_catalago/azul-p.svg">
+                            </figure>
+                            <div class="textoPro">
+                                <h3>Peça Baixa Azul</h3>
+                                <br>
+                                <br>
+                                <input type="text" name="Aux_Write_Bx_Az_Caio" placeholder="Qtde." size="3">
+                            </div>
+                        </div>
+                        <div class="box">
+                            <figure class="figura">
+                                <img src="_img/_catalago/verm-p.svg">
+                            </figure>
+                            <div class="textoPro">
+                                <h3>Peça Baixa Vermelha</h3>
+                                <br>
+                                <br>
+                                <input type="text" name="Aux_Write_Bx_Vm_Caio" placeholder="Qtde." size="3">
+                            </div>
+                        </div>
+                    </div>
+                    <input type="submit">
+                </form>
+            </div>
+
+        </div>
+
+    </section>
+
+    <br><br>
+
+    
+
+</body>
+</html>

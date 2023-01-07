@@ -1,0 +1,58 @@
+:root {
+    --wh: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/*INDEX - IMAGEM DE FUNDO DO SITE*/
+
+#tema {
+    background-color: var(--wh);
+    min-height: 850px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+#tema::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(industria4.0.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: saturate(0);
+    opacity: 0.15;
+}
+
+
+
+/*LOGIN*/
+
+
+
+#temaVenda {
+    background-color: rgb(243, 240, 240);
+    min-height: 850px;
+    display: flex;
+    justify-content: center;
+}
+
+#temaVenda::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(industria4.0.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: saturate(0);
+    opacity: 0.15;
+}

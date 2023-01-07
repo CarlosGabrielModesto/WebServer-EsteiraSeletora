@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+
+:root {
+  --f1:'Lato', sans-serif;
+  --c1: #005091;
+  --c2: #ffffff;
+  --c3: #000000;
+  --c4: #333333;
+  --c5: #ff0000;
+  --c6: #dfdfdf;
+  --c7: #b9b9b9;
+  --c8: #04AA6D;
+}
+
+
+#tela{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  right: 700px;
+  bottom: 400px;
+  height: 300px;
+  width: 500px;
+  background-color: var(--c4);
+  border: 2px solid var(--c2);
+  display: none;
+  z-index: 3;
+}
+
+#yn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+#tela p{
+  font-family: var(--f1);
+  color: var(--c2);
+  font-size: 35px;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.sair{
+  height: 50px;
+  
+  
+}
+
+.sair:hover{
+  background-color: #aa1313;
+  
+}
+
+.btn-out{
+  background-color: #aa1313;
+  justify-content: center;
+  margin: 10px;
+  align-items: center;
+  padding: 16px;
+  margin-top: 50px;
+  color: white;
+  font-weight: bold;
+}
+
+.btn-out:hover{
+  background-color: rgb(238, 231, 231);
+  color: #aa1313;
+}
+
+.fundo{
+  float: right;
+  width: 50px;
+  height: 50px;
+  margin: 14px 20px;
+}
+
+.ab{
+  width: 45px;
+  height: 45px;
+}
+
+.aa, .bb , .cc{
+  display: none;
+}
+
+.a{
+  width: 50px;
+  height: 50px;
+}
+
+/*
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: var(--f1);
+}
+*/
+
+body{
+  background-color: var(--c6);
+}
+
+
+input[type=text]{
+  width: 100px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid var(--c6);
+  border-radius: 4px;
+  box-sizing: border-box;
+  
+  
+}
+
+input[type=submit]{
+  background-color: var(--c4);
+  border-radius: 20px;
+  color: var(--c6);
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  float: right;
+  
+}
+
+input[type=select], select {
+  width: 70%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid var(--c6);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.sec{
+  width: 100px ;
+  height: 100px ;
+  margin-top: -100px;
+  margin-left: 1000px;
+}
+
+.fof{
+  margin: 20px;
+  width: 150px;
+}
+  
+li {
+  float: left;
+  border-right:1px solid var(--c6);
+}
+  
+li:last-child {
+  border-right: none;
+}
+  
+/*
+li a {
+  display: block;
+  color: var(--c2);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+  
+li a:hover:not(.active) {
+  background-color: var(--c3);
+}
+*/
+  
+.active {
+  background-color: var(--c8);
+}
+
+.container {
+  display: flex;
+  padding: 16px 64px;
+}
+
+.table-box {
+  width: 1040px;
+}
+
+.cantinho{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: 20%;
+  border-radius: 10px;
+  background-color: var(--c1);
+  padding: 30px;
+  margin: 20px;
+  margin-top: 70px;
+  text-align: center;
+  z-index: 2;
+}
+
+.cabe {
+  font-size: 18px;
+  color: var(--c6);
+  margin: 15px 0px 30px 0px;
+}
+
+.center{
+  display: block;
+  border-radius: 10px;
+}
+
+.emp {
+  background-color: var(--c4);
+  border-radius: 10px;
+  color: var(--c2);
+  width: 200px;
+  height: 50px;
+  font-size: 18px;
+  margin: 0px 10px 20px;
+}
+
+.aa{
+  margin-top: 10px;
+  margin-left: 60px;
+}
+.aa h1 {
+  margin: 10px;
+  font-size: 30px;
+}
+
+.socorro {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1040px;
+}
+
+.box{
+  display: flex;
+  background-color: var(--c7);
+  width: 300px;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+
+.figura {
+  transition: 0.4s;
+  text-align: center;
+}
+
+.figura img{
+  width: 200px;
+  border-radius: 20px;
+}
+
+.bb{
+  margin-top: 10px;
+  margin-left: 60px;
+}
+
+.bb h1 {
+  margin: 10px;
+  font-size: 30px;
+}
+
+.cc{
+  margin-top: 10px;
+  margin-left: 60px;
+}
+
+.cc h1 {
+  margin: 10px;
+  font-size: 30px;
+}
+
+input[type=submit]:hover {
+  background-color: var(--c7);
+}

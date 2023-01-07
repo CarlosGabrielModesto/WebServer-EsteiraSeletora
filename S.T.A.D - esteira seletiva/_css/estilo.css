@@ -1,0 +1,842 @@
+:root {
+    --c1: #005091;
+    --c2: rgb(242, 243, 240);
+    --c3: #1C1C1C;
+    --c4: #D9D7DD;
+    --bl: black;
+    --wh: white;
+}
+
+/*Limitando o redimencionamento até o minimo de 700 px*/
+body {
+    min-width: 700px;
+}
+
+h1,
+h3 {
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/*Area do Banner*/
+#banner {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-image: url('https://wallpaperaccess.com/full/4323758.jpg');
+    background-size: cover;
+    background-position: top;
+    margin: 0rem 0rem 2rem 0rem;
+}
+
+div#bannerBox {
+    position: absolute;
+    top: 15%;
+    right: 5%;
+    width: 30%;
+    height: 65%;
+    background-color: rgb(240, 238, 238);
+    box-shadow: 2px 2px 5px rgba(240, 238, 238, 0.39);
+    display: flex;
+}
+
+div#bannerBox hr {
+    position: absolute;
+    top: 8%;
+    left: 5%;
+    width: 5px;
+    height: 88%;
+    background-color: #005091;
+    border-radius: 20px;
+}
+
+
+div#bannerBoxTitle {
+    padding: 5% 8% 0% 8%;
+    display: flex;
+    flex-direction: column;
+}
+
+#titleBox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+div#bannerBoxTitle img {
+    width: 85px;
+    margin-right: 10px;
+}
+
+div#bannerBoxCont {
+    padding: 2% 8% 0% 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.produtos-descricao {
+    z-index: 2;
+}
+
+
+/*-----------------------------Area do Banner - redimencionada--------------------------------------------*/
+
+@media (max-width: 1350px) {
+
+    div#bannerBox {
+        right: 5%;
+        width: 40%;
+        height: 65%;
+    }
+
+}
+
+
+@media (max-width: 1050px) {
+
+    div#bannerBox {
+        right: 5%;
+        width: 50%;
+        height: 70%;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+
+    div#bannerBox hr {
+        top: 8%;
+        left: 5%;
+        width: 5px;
+        height: 88%;
+        background-color: #005091;
+        border-radius: 20px;
+    }
+
+
+    div#bannerBox {
+        right: 5%;
+        width: 60%;
+        height: 70%;
+    }
+
+    div#bannerBoxTitle {
+        padding: 5% 8% 2% 8%;
+    }
+
+
+}
+
+/*---------------------------------------------------------------------------------------------------------*/
+
+
+/*Produtos-descricao*/
+
+#resumo {
+    margin: 0% 5%;
+    z-index: 2;
+}
+
+div#resumoTitle {
+    margin-bottom: 2rem;
+
+}
+
+div#resumoTitle h1 {
+    font-size: 1.6rem;
+
+}
+
+div#containerResumo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+}
+
+div.card {
+    width: 100%;
+    height: 370px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.24);
+}
+
+
+
+/*----------------------------Produtos-descricao - Redimencionamento--------------------------------------*/
+
+
+@media (max-width: 1640px) {
+
+    div#containerResumo {
+        gap: 25px;
+    }
+
+    div.card {
+        width: 100%;
+        height: 470px;
+    }
+}
+
+@media (max-width: 1450px) {
+
+    div#containerResumo {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    div.card {
+        width: 40%;
+        height: 420px;
+    }
+
+}
+
+@media (max-width: 1320px) {
+
+    div#containerResumo {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    div.card {
+        width: 60%;
+        height: 440px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    body {
+        min-width: 700px;
+    }
+
+    div#containerResumo {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: center;
+    }
+
+    div.card {
+        width: 80%;
+        height: 440px;
+    }
+
+}
+
+/*---------------------------------------------------------------------------------------------------------*/
+
+
+
+/*Controle da opacidade da área de imagem de nossos produtos*/
+div.cardImage {
+    width: 100%;
+    height: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(198, 221, 240);
+    z-index: 2;
+
+}
+
+div.cardImage img {
+    width: 20%;
+
+}
+
+div.cardCont {
+    width: 100%;
+    height: 55%;
+    background-color: var(--c4);
+
+}
+
+div.cardContTitle {
+    padding: 10px 0px 6px 20px;
+
+}
+
+div.cardContText {
+    padding: 3px 20px;
+    text-align: justify;
+
+}
+
+
+/*CATALOGO - CONTAINER*/
+
+#containerCat {
+    display: flex;
+    align-items: center;
+    margin: 5rem 0%;
+    background-color: var(--c2);
+    box-shadow: 2px 2px 5px #aeb0a06b;
+    z-index: 2;
+}
+
+div#catText {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+div#catBox h1 {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+div#catBox p {
+    text-align: justify;
+    margin-bottom: 1.5rem;
+}
+
+/*BOTAO ACESSAR CATALOGO*/
+
+.btn-catalogo {
+    display: flex;
+    position: relative;
+    width: 400px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--wh);
+    background-color: var(--c1);
+    box-shadow: 2px 2px 5px var(--c1);
+
+}
+
+.btn-catalogo:hover {
+    transition: 0.4s;
+    cursor: pointer;
+    background-color: #0259a0;
+}
+
+/*IMAGEM CATÁLOGO*/
+
+div#catImg {
+    width: 50%;
+    height: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+div#catImg img {
+    width: 90%;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.432);
+}
+
+
+
+
+/*-------------------------Nossos Pordutos - Redimencionamento----------------------------------------*/
+
+@media (max-width: 1450px) {
+
+    section#containerCat {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /*VENHA CONHECER NOSSOS PRODUTOS - text - Redimencionado*/
+    div#catText {
+        width: 100%;
+        height: 100%;
+        padding: 30px 100px;
+    }
+
+    div#acessar-catalogo {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    div#catBox h1 {
+        margin-left: -50px;
+        margin-bottom: 1.5rem;
+        font-size: 1.8rem;
+    }
+
+    div#catBox p {
+        display: flex;
+        text-align: justify;
+        margin-bottom: 1.5rem;
+        margin-bottom: 40px;
+    }
+
+    /*BOTAO ACESSAR CATALOGO*/
+
+    .btn-catalogo {
+        display: flex;
+        position: relative;
+        width: 400px;
+        height: 40px;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        font-weight: bold;
+        color: var(--wh);
+        background-color: var(--c1);
+        box-shadow: 2px 2px 5px var(--c1);
+
+    }
+
+    .btn-catalogo:hover {
+        transition: 0.4s;
+        cursor: pointer;
+        background-color: #0259a0;
+    }
+
+    /*IMAGEM CATÁLOGO*/
+
+    div#catImg {
+        width: 70%;
+        height: 100%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+    div#catImg img {
+        width: 90%;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.432);
+        margin-bottom: 40px;
+    }
+
+}
+
+
+@media (max-width: 1050px) {
+    /*IMAGEM CATÁLOGO*/
+
+    div#catImg {
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 760px) {
+    /*IMAGEM CATÁLOGO*/
+
+    div#catImg {
+        width: 90%;
+    }
+
+}
+
+/*----------------------------------------------------------------------------------------------*/
+
+/*SOBRE*/
+
+#sobre {
+    display: block;
+    z-index: 2;
+}
+
+div#sobreTitle {
+    display: flex;
+    align-items: center;
+    color: var(--wh);
+    background-color: var(--c1);
+    margin: 0px 5%;
+    padding: 15px 0px 15px 5%;
+}
+
+div#sobreTitle img {
+    width: 200px;
+    margin-right: 20px;
+}
+
+div#sobreGrid {
+    display: grid;
+    grid-template-areas:
+        'stad stad'
+        'el ds';
+    width: 100%;
+    padding: 2% 5%;
+    column-gap: 20px;
+}
+
+div#stad {
+    grid-area: stad;
+    display: flex;
+    margin-top: 1rem;
+}
+
+div#stad img {
+    width: 60%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.356);
+}
+
+div#stadText {
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+div#stadText h2 {
+    margin-bottom: 1.5rem;
+}
+
+div#stadText p {
+    text-align: justify;
+    line-height: 25px;
+    letter-spacing: 0.5px;
+}
+
+/*--------------------sobre - Parte 1 integração Interdisciplinar - Redimencionamento------------------------*/
+
+@media (max-width: 1450px) {
+    #sobre {
+        display: block;
+        z-index: 2;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    div#sobreTitle {
+        display: flex;
+        justify-content: center;
+        padding: 10px 0px 10px 0;
+        margin: 0px 14%;
+    }
+
+
+
+
+    div#sobreTitle img {
+        width: 100px;
+        margin-right: 20px;
+    }
+
+    div#sobreTitle h2 {
+        font-size: 1.6rem;
+    }
+
+    div#sobreGrid {
+        display: grid;
+        grid-template-areas:
+            'stad'
+            'stad'
+            'el'
+            'ds';
+        width: 100%;
+        padding: 2% 5%;
+        column-gap: 20px;
+    }
+
+    /*Area (texto + img)- Integração Interdisciplinar*/
+    div#stad {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        grid-area: stad;
+        display: flex;
+        margin-top: 1rem;
+    }
+
+    div#stad img {
+        width: 80%;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.356);
+    }
+
+    /*text Integração Interdisciplinar*/
+    div#stadText {
+        margin: 3% 10%;
+
+    }
+
+    div#stadText h2 {
+        margin-bottom: 1.5rem;
+    }
+
+    div#stadText p {
+        text-align: justify;
+    }
+}
+
+
+@media (max-width: 1015px) {
+
+    div#sobreTitle h2 {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 920px) {
+
+    div#sobreTitle h2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 840px) {
+    div.Title h2 {
+        font-size: 1.2rem;
+    }
+
+    div#sobreTitle h2 {
+        font-size: 1.1rem;
+    }
+
+}
+
+@media (max-width: 720px) {
+
+    div#sobreTitle h2 {
+        font-size: 1.1rem;
+    }
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------*/
+
+
+div#el {
+    grid-area: el;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#imgEl {
+    width: 80%;
+    height: 70%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.356);
+}
+
+div#el p {
+    width: 90%;
+    text-align: justify;
+    letter-spacing: 0.5px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+div#ds {
+    grid-area: ds;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#imgDs {
+    width: 80%;
+    height: 70%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.356);
+}
+
+div#ds p {
+    width: 90%;
+    text-align: justify;
+    letter-spacing: 0.5px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.desc-tec {
+    margin-top: 20px;
+    margin-left: 5.3rem;
+    margin-right: 1rem;
+}
+
+div.Title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    padding: 5px;
+    color: var(--wh);
+    background-color: #005091;
+}
+
+/*icones - técnico*/
+div.Title img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+
+/*--------------------sobre - Parte 2 integração Interdisciplinar - Redimencionamento------------------------*/
+
+@media (max-width: 1450px) {
+    .desc-tec {
+        margin-top: 20px;
+        margin-left: 7.4rem;
+        margin-right: 1rem;
+    }
+}
+
+@media (max-width: 1320px) {
+    .desc-tec {
+        margin-top: 20px;
+        margin-left: 6.7rem;
+        margin-right: 1rem;
+    }
+}
+
+@media (max-width: 1100px) {
+    .desc-tec {
+        margin-top: 20px;
+        margin-left: 5.5rem;
+        margin-right: 1rem;
+    }
+}
+
+@media (max-width: 870px) {
+    .desc-tec {
+        margin-top: 20px;
+        margin-left: 4.2rem;
+        margin-right: 1rem;
+    }
+}
+
+@media (max-width: 720px) {
+    .desc-tec {
+        margin-top: 20px;
+        margin-left: 3.4rem;
+        margin-right: 1rem;
+    }
+
+
+}
+
+/*----------------------------------------------------------------------------------------------*/
+
+
+#sobreSenai {
+    width: 100%;
+    height: 450px;
+    background-image: url('senai-botucatu.jpeg');
+    background-position: top;
+    background-size: cover;
+    margin: 2rem 0rem;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.377);
+}
+
+div#fundo {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.795);
+    display: grid;
+    grid-template-areas:
+        'title title'
+        'cont1 cont2';
+}
+
+div#title {
+    grid-area: title;
+    width: 100%;
+    height: 100px;
+    color: var(--wh);
+    padding: 40px 5% 10px 5%;
+}
+
+#sobreSenai p {
+    letter-spacing: 0.5px;
+    line-height: 24px;
+    text-indent: 3rem;
+}
+
+div#cont1 {
+    grid-area: cont1;
+    height: 400px;
+    text-align: justify;
+    padding: 0px 5% 20px 10%;
+    color: var(--wh);
+}
+
+div#cont2 {
+    grid-area: cont2;
+    height: 400px;
+    text-align: justify;
+    padding: 0px 10% 20px 5%;
+    color: var(--wh);
+}
+
+
+/*----------------------------SOBRE - SENAI----------------------------------------*/
+
+@media (max-width: 1320px) {
+
+    div#fundo {
+        grid-template-areas:
+            'title'
+            'cont1'
+            'cont2';
+    }
+
+    div#cont1 {
+        height: 220px;
+        text-align: justify;
+        padding: 0px 10% 20px 5%;
+        color: var(--wh);
+    }
+
+    div#cont2 {
+        height: 150px;
+        text-align: justify;
+        padding: 0px 10% 20px 5%;
+        color: var(--wh);
+    }
+}
+
+@media (max-width: 1170px) {
+    div#cont1 {
+        height: 300px;
+        text-align: justify;
+        padding: 0px 10% 20px 5%;
+        color: var(--wh);
+    }
+
+    #sobreSenai {
+        width: 100%;
+        height: 600px;
+    }
+
+}
+
+@media (max-width: 860px) {
+
+    body {
+        min-width: 790px;
+    }
+
+    div#cont1 {
+        height: 350px;
+        text-align: justify;
+        padding: 0px 10% 20px 5%;
+        color: var(--wh);
+    }
+
+    div#cont2 {
+        height: 150px;
+        text-align: justify;
+        padding: 0px 10% 20px 5%;
+        color: var(--wh);
+    }
+
+    #sobreSenai {
+        width: 100%;
+        height: 700px;
+    }
+
+}
